@@ -1,0 +1,2340 @@
+
+
+Department Security Ranking
+Rank departments.
+
+Example:
+
+1. IT          95/100
+2. Quality     90/100
+3. Finance     78/100
+4. HR          62/100
+This introduces healthy competition and is easy to visualize.  tell me how would i calculate this
+
+A department security ranking works best when it is based on a weighted score from multiple security metrics rather than a single number. Each department earns points in different categories, and the weighted total becomes its score out of 100.
+
+Example Formula
+Metric	Weight	How to Calculate
+Security Training Completion	20%	% of employees who completed training
+MFA Enabled	20%	% of users with MFA enabled
+Phishing Test Success	20%	% of users who did not click phishing emails
+Vulnerability Compliance	25%	% of devices with no critical vulnerabilities
+Policy Compliance	15%	% of security policies followed
+Overall Security Score
+
+Score =
+(Training × 0.20) +
+(MFA × 0.20) +
+(Phishing × 0.20) +
+(Vulnerability × 0.25) +
+(Policy × 0.15)
+Since each metric is already expressed as a percentage (0–100), the final score is also out of 100.
+
+Example Calculation
+IT Department
+Metric	Value	Weight	Weighted Score
+Training	100	20%	20.0
+MFA	95	20%	19.0
+Phishing	90	20%	18.0
+Vulnerability	92	25%	23.0
+Policy	98	15%	14.7
+Total Score
+
+20 + 19 + 18 + 23 + 14.7 = 94.7 ≈ 95/100
+Another Example
+HR Department
+Metric	Value
+Training	85
+MFA	70
+Phishing	65
+Vulnerability	60
+Policy	80
+Score =
+(85 × 0.20) +
+(70 × 0.20) +
+(65 × 0.20) +
+(60 × 0.25) +
+(80 × 0.15)
+
+= 17 + 14 + 13 + 15 + 12
+= 71/100
+Department Ranking
+Rank	Department	Security Score
+🥇 1	IT	95
+🥈 2	Quality	90
+🥉 3	Finance	78
+4	HR	71
+Department security ranking
+Example weighted security scores by department.
+
+0
+25
+50
+75
+100
+IT
+Quality
+Finance
+HR
+If you have raw security data
+If your system tracks individual events instead of percentages, you can calculate each metric first:
+
+Training Completion = (Employees completed training ÷ Total employees) × 100
+
+MFA Adoption = (Users with MFA enabled ÷ Total users) × 100
+
+Phishing Success = (Users who passed phishing simulation ÷ Total users tested) × 100
+
+Vulnerability Compliance = (Devices without critical vulnerabilities ÷ Total devices) × 100
+
+Policy Compliance = (Successful audits ÷ Total audits) × 100
+
+Then apply the weighted formula to produce the final department score.
+
+This approach is simple, transparent, and makes it easy for departments to see which areas need improvement.
+
+
+existing solutions contains user management, campaign management ,email template library ,employee grouping, email open tacking ,link click tracking,credential submission tracking ,awareness landing page ,dashboard analytics,risk scoring , department analysis ,reports these are the features of the existing solutions apart from these what are the feature that i should add as an improveement to the existing solution, Department Security Ranking Rank departments. Example: 1. IT 95/100 2. Quality 90/100 3. Finance 78/100 4. HR 62/100 This introduces healthy competition and is easy to visualize. tell me how would i calculate this
+
+
+Your existing solution already covers the core functionality of a phishing awareness platform:
+
+User Management
+
+Campaign Management
+
+Email Template Library
+
+Employee Grouping
+
+Email Open Tracking
+
+Link Click Tracking
+
+Credential Submission Tracking
+
+Awareness Landing Page
+
+Dashboard Analytics
+
+Risk Scoring
+
+Department Analysis
+
+Reports
+
+To make your solution stand out, focus on intelligence, gamification, personalization, and predictive analytics rather than adding more tracking features.
+
+1. Department Security Ranking ⭐ (Highly Recommended)
+Instead of only showing department analysis, rank departments based on their overall security posture.
+
+Example
+Rank	Department	Score
+🥇 1	IT	95/100
+🥈 2	Quality	90/100
+🥉 3	Finance	78/100
+4	HR	62/100
+This motivates departments to improve and creates healthy competition.
+
+How to Calculate
+Use multiple metrics instead of only phishing clicks.
+
+Metric	Weight
+Training Completion	20%
+Email Open Rate	10%
+Safe Link Behavior (Didn't Click)	25%
+Credential Safety (Didn't Submit Password)	35%
+Repeat Offender Penalty	10%
+For each department:
+
+Department Score =
+(Training × 0.20)
++ (Safe Open × 0.10)
++ (Safe Link × 0.25)
++ (Credential Safety × 0.35)
++ (Repeat Behavior × 0.10)
+Example
+Suppose HR has:
+
+Training = 90%
+
+Opened Emails = 95%
+
+Did Not Click = 60%
+
+Did Not Submit Credentials = 80%
+
+Repeat Offender = 70%
+
+Score =
+90×0.20
++95×0.10
++60×0.25
++80×0.35
++70×0.10
+
+=18
++9.5
++15
++28
++7
+
+=77.5 ≈ 78/100
+2. Security Maturity Level
+Instead of only showing a risk score, assign levels.
+
+Score	Level
+90-100	🟢 Excellent
+75-89	🟡 Good
+60-74	🟠 Needs Improvement
+Below 60	🔴 High Risk
+This is easier for managers to understand.
+
+3. Employee Leaderboard (Gamification)
+Reward employees who consistently identify phishing emails.
+
+Example:
+
+Employee	Score
+Alice	100
+John	98
+David	96
+This encourages positive behavior.
+
+4. Personalized Training Recommendations
+Instead of assigning the same training to everyone:
+
+Clicked link → Phishing Awareness
+
+Submitted credentials → Password Security
+
+Opened attachment → Malware Awareness
+
+Failed multiple campaigns → Advanced Security Training
+
+This makes learning more relevant.
+
+5. AI Risk Prediction
+Use historical campaign data to predict which employees are most likely to fail future phishing simulations.
+
+Example:
+
+Employee	Predicted Risk
+John	92%
+Sarah	75%
+Mike	25%
+This enables proactive interventions.
+
+6. Phishing Trend Analysis
+Display trends over time.
+
+Monthly click rate
+
+Credential submission trend
+
+Department improvement
+
+Campaign effectiveness
+
+Managers can quickly see whether security awareness is improving.
+
+7. Security Heat Map
+Color-code departments based on risk.
+
+IT          🟢
+Finance     🟡
+HR          🔴
+Quality     🟢
+Sales       🟠
+This gives an immediate visual overview.
+
+8. Repeat Offender Detection
+Identify employees who repeatedly fail phishing simulations.
+
+Example:
+
+Employee	Failures
+John	5
+Alex	4
+These users can receive targeted coaching.
+
+9. Security Improvement Score
+Show progress over time.
+
+Example:
+
+Month	Score
+January	65
+February	71
+March	79
+April	88
+This demonstrates the impact of awareness efforts.
+
+10. Department Comparison Dashboard
+Compare key metrics side by side.
+
+Department	Click Rate	Credential Submission	Risk Score	Rank
+IT	4%	1%	95	1
+Quality	6%	2%	90	2
+Finance	12%	7%	78	3
+HR	20%	10%	62	4
+11. Security Achievement Badges
+Award badges such as:
+
+🏆 Zero Clicks for 6 Months
+
+🥇 Phishing Champion
+
+🎯 Perfect Training Completion
+
+🛡 Secure Department
+
+⭐ Fast Reporter
+
+These encourage continued engagement.
+
+12. Campaign Effectiveness Score
+Evaluate campaigns based on outcomes.
+
+Effectiveness =
+40% Reduction in Click Rate
++
+30% Training Completion
++
+30% Risk Score Improvement
+This helps administrators compare different campaigns.
+
+13. Executive Security Dashboard
+Provide executives with high-level KPIs:
+
+Organization Security Score
+
+Highest Risk Department
+
+Lowest Risk Department
+
+Total Employees Trained
+
+Average Risk Score
+
+Trend vs Last Month
+
+Top 5 High-Risk Users
+
+Top Improving Department
+
+14. Smart Recommendations
+Generate actionable recommendations automatically, for example:
+
+"Finance has a 35% phishing click rate. Schedule advanced phishing training."
+
+"HR has repeated credential submissions. Enforce MFA awareness."
+
+"Sales improved by 18% this month. Continue current campaign cadence."
+
+Suggested Overall Department Security Score
+A comprehensive formula could combine multiple dimensions:
+
+Metric	Weight
+Training Completion	20%
+Safe Email Handling (No Click)	25%
+Credential Safety	30%
+Average Employee Risk Score	15%
+Improvement Since Last Campaign	10%
+Department Security Score =
+(Training Completion × 0.20)
++ (Safe Email Handling × 0.25)
++ (Credential Safety × 0.30)
++ (Average Employee Risk Score × 0.15)
++ (Improvement Trend × 0.10)
+This score is normalized to 0–100 and can be used directly for ranking. It reflects not only current performance but also improvement over time, making it a balanced metric for healthy competition among departments.
+
+
+Metric	Weight
+Training Completion	20%
+Email Open Rate	10%
+Safe Link Behavior (Didn't Click)	25%
+Credential Safety (Didn't Submit Password)	35%
+Repeat Offender Penalty	10% tell me how are u taking the weightage on what basis
+
+That's a good question. The weights I suggested are not a standard—they were an example based on the relative importance of each metric in measuring security behavior. The weights should reflect how much each behavior contributes to actual cybersecurity risk.
+
+Here's the reasoning behind each one:
+
+Metric	Why it Matters	Suggested Weight
+Training Completion	Training improves awareness, but completing training doesn't guarantee secure behavior.	20%
+Email Open Rate	Simply opening an email isn't necessarily risky because legitimate emails are opened too.	10%
+Safe Link Behavior	Clicking a phishing link is a direct indicator of susceptibility to phishing.	25%
+Credential Safety	Submitting credentials to a phishing page is the most severe failure because it can directly compromise accounts.	35%
+Repeat Offender Penalty	Repeated failures indicate persistent risky behavior and should affect the score.	10%
+Why is Credential Safety weighted highest?
+Consider the impact of different actions:
+
+Opened phishing email → No real compromise
+
+Clicked phishing link → Potential exposure
+
+Submitted credentials → Actual credential compromise
+
+The severity increases at each step, so credential submission deserves the highest weight.
+
+For example:
+
+Employee	Opened	Clicked	Submitted Credentials	Risk
+A	✅	❌	❌	Low
+B	✅	✅	❌	Medium
+C	✅	✅	✅	High
+Employee C represents a much greater security risk than Employee B, even though both clicked the link.
+
+A Better Approach: Base the Weights on Risk Severity
+Instead of choosing weights arbitrarily, assign points based on the severity of each action.
+
+Event	Risk Points
+Completed training	+20
+Ignored phishing email	+30
+Reported phishing email	+20
+Clicked phishing link	-20
+Submitted credentials	-40
+Repeat offense	-10 per occurrence
+Then calculate:
+
+Department Security Score =
+100
++ Positive Points
+- Negative Points
+Finally, clamp the score between 0 and 100.
+
+This method is easier to explain because each event has a clear impact on the score.
+
+An Even More Data-Driven Approach (Recommended for a Final-Year Project)
+Rather than assigning fixed weights, derive them from your organization's priorities. For example:
+
+Objective	Weight
+Prevent credential theft	40%
+Reduce phishing clicks	30%
+Improve training completion	20%
+Reduce repeat offenders	10%
+The department score then becomes:
+
+Security Score =
+0.40 × Credential Safety
++ 0.30 × Safe Link Behavior
++ 0.20 × Training Completion
++ 0.10 × Repeat Offender Score
+This approach is easier to justify because the weights are directly tied to business objectives.
+
+Which approach should you use?
+For an academic project, I recommend the objective-based weighted model. It is:
+
+Easy to explain in a report or presentation.
+
+Based on the relative severity of security behaviors rather than arbitrary numbers.
+
+Flexible, since administrators can adjust the weights to match their organization's security priorities.
+
+
+existing solutions contains user management, campaign management ,email template library ,employee grouping, email open tacking ,link click tracking,credential submission tracking ,awareness landing page ,dashboard analytics,risk scoring , department analysis ,reports these are the features of the existing solutions apart from these what are the feature that i should add as an improveement to the existing solution  can i add the feature of suspicious words to the existing solution
+
+Yes, you can add a "Suspicious Words Detection" feature, but it will be more valuable if you expand it beyond just highlighting words. By itself, a list of suspicious words is a relatively simple feature. If you turn it into an Email Risk Analyzer, it becomes a meaningful improvement over existing phishing awareness platforms.
+
+Proposed Feature: Suspicious Email Analyzer
+When an administrator creates a phishing email template (or when an employee reports an email), the system analyzes the email and identifies phishing indicators.
+
+What it detects
+Indicator	Example
+Suspicious words	"Urgent", "Verify", "Limited Time", "Click Here", "Winner", "Immediate Action", "Account Suspended"
+Urgency phrases	"Within 24 hours", "Act Now"
+Threatening language	"Your account will be deleted"
+Financial keywords	"Invoice", "Payment", "Bank", "Refund"
+Credential request	"Enter your password", "Verify your login"
+Suspicious URLs	Shortened links, mismatched domains
+Excessive punctuation	"!!!", "URGENT!!!"
+Excessive capitalization	"CLICK NOW", "FREE MONEY"
+Risk Scoring
+Each detected indicator contributes to an overall risk score.
+
+Indicator	Points
+Suspicious keyword	+5
+Credential request	+25
+Urgency phrase	+10
+Suspicious URL	+30
+Attachment	+15
+Domain mismatch	+20
+Example:
+
+Email:
+URGENT!!
+Your account will be suspended.
+Click here to verify your password.
+
+Detected:
+✔ Urgency
+✔ Credential request
+✔ Suspicious URL
+✔ Suspicious keyword
+
+Risk Score = 85/100
+Risk Level = High
+Benefits
+This feature helps users understand why an email appears suspicious instead of simply telling them that it is phishing. It reinforces learning by connecting specific email characteristics to potential risks.
+
+Employee Learning Mode
+After a phishing simulation, the system can explain the warning signs that were present.
+
+For example:
+
+You clicked this phishing email.
+
+The email contained:
+
+✓ Urgent language
+✓ Credential request
+✓ Suspicious hyperlink
+✓ Unknown sender
+✓ Threatening message
+
+Remember to verify these indicators before interacting with similar emails.
+This turns each simulation into a teaching opportunity.
+
+Other Features That Would Differentiate Your Project
+If you're looking for features that are less common in existing solutions, consider:
+
+Department Security Ranking – Rank departments based on security performance.
+
+Security Badge System – Award badges such as "Phishing Champion" or "Zero Clicks".
+
+AI Email Risk Analyzer – Automatically evaluate phishing emails and assign a risk score.
+
+Personalized Training Recommendations – Recommend training based on an employee's mistakes.
+
+Repeat Offender Detection – Identify employees who repeatedly fail phishing simulations.
+
+Phishing Trend Prediction – Forecast departments or users likely to be at higher risk.
+
+Security Heat Map – Visualize high-risk departments and teams.
+
+Email Difficulty Levels – Categorize campaigns as Easy, Medium, or Advanced to progressively challenge employees.
+
+Real-Time Phishing Report Button – Allow employees to report suspected phishing emails and track response rates.
+
+Monthly Security Improvement Score – Measure how departments improve over time.
+
+Recommendation
+For a final-year project, I would recommend combining Department Security Ranking with an Email Risk Analyzer (Suspicious Words + URL + Domain + Credential Request Detection). Together, these features are practical, demonstrate meaningful technical work, and clearly distinguish your system from solutions that focus only on campaign management and tracking.
+
+
+if i add the suspicious word feature what will be the changes and how to add it
+
+Yes, you can add a Suspicious Words Detection feature. However, instead of making it just a list of suspicious words, integrate it into your phishing awareness system as an Email Risk Analyzer. This makes it a meaningful enhancement rather than a standalone feature.
+
+Where it fits in your system
+Your current workflow is:
+
+Admin Login
+      ↓
+Create Campaign
+      ↓
+Create Email Template
+      ↓
+Send Email
+      ↓
+Track Opens, Clicks, Credentials
+      ↓
+Reports
+With the new feature:
+
+Admin Login
+      ↓
+Create Email Template
+      ↓
+Analyze Email
+      ↓
+Highlight Suspicious Words
+      ↓
+Calculate Email Risk Score
+      ↓
+Admin can Edit or Continue
+      ↓
+Send Campaign
+What changes are needed?
+1. Database
+Create a table to store suspicious words.
+
+suspicious_words
+id	word	category	risk_points
+1	urgent	Urgency	5
+2	verify	Credential	10
+3	password	Credential	15
+4	account suspended	Threat	10
+5	click here	Action	5
+6	immediately	Urgency	5
+7	invoice	Financial	5
+The administrator can also add new suspicious words in the future.
+
+2. Email Template Page
+Add an Analyze Email button.
+
+Current page:
+
+Subject
+
+Body
+
+[Send]
+New page:
+
+Subject
+
+Body
+
+[Analyze Email]
+
+Risk Score : 70/100
+
+Detected Words
+
+✔ Urgent
+✔ Verify
+✔ Password
+✔ Click Here
+
+[Send]
+3. Email Analysis Algorithm
+When the admin clicks Analyze:
+
+Read Email
+
+↓
+
+Convert to lowercase
+
+↓
+
+Remove punctuation
+
+↓
+
+Split into words
+
+↓
+
+Compare with suspicious words database
+
+↓
+
+Count matches
+
+↓
+
+Calculate Risk Score
+
+↓
+
+Display results
+4. Example
+Email:
+
+URGENT!!
+
+Verify your account immediately.
+
+Click here and enter your password.
+
+Failure to verify will suspend your account.
+Dictionary
+
+Word	Points
+urgent	5
+verify	10
+immediately	5
+click here	5
+password	15
+suspend	10
+Total
+
+5
++10
++5
++5
++15
++10
+=50
+If
+
+0–20     Low Risk
+21–40    Medium Risk
+41–60    High Risk
+61–100   Very High Risk
+Then
+
+Risk Score = 50
+
+Risk Level = High
+5. Highlight suspicious words
+Instead of only showing a score, highlight the words.
+
+Original email
+
+URGENT!!
+
+Verify your account immediately.
+
+Click here and enter your password.
+Analyzed email
+
+[URGENT]
+
+[Verify] your account [immediately].
+
+[Click here] and enter your [password].
+The admin instantly sees why the email is considered risky.
+
+6. Dashboard
+Add a new section.
+
+Email Analysis
+
+Risk Score
+85%
+
+Detected Indicators
+
+✓ Urgency
+✓ Credential Request
+✓ Suspicious Link
+✓ Financial Terms
+
+Most Common Suspicious Word
+
+"Verify"
+
+Most Dangerous Template
+
+Payroll Update
+7. New Menu
+Dashboard
+
+Campaigns
+
+Templates
+
+Users
+
+Employee Groups
+
+Reports
+
+Suspicious Words   ← NEW
+The administrator can
+
+Add new words
+
+Delete words
+
+Update categories
+
+Change risk points
+
+Technologies
+If you're using Spring Boot + MySQL, the implementation is straightforward:
+
+Backend (Spring Boot):
+
+Create a SuspiciousWord entity (id, word, category, riskPoints).
+
+Create a repository to fetch all suspicious words.
+
+Implement an EmailAnalysisService that scans the email content and returns:
+
+Matched words
+
+Total risk score
+
+Risk level (Low/Medium/High)
+
+Frontend (React/Angular/JSP):
+
+Add an Analyze Email button.
+
+Display the matched words, highlighted text, and risk score before sending.
+
+Is this enough as a project enhancement?
+Yes, especially if you make it interactive rather than just matching keywords. To make it stronger:
+
+Highlight suspicious words in the email.
+
+Categorize them (Urgency, Credential Request, Financial, Threat, etc.).
+
+Calculate an overall email risk score.
+
+Allow administrators to manage the suspicious words list.
+
+Show explanations, such as: "'Verify' is commonly used in phishing emails to encourage users to reveal credentials."
+
+This demonstrates text analysis, configurable rules, and user-focused feedback, making it a more substantial enhancement than a simple keyword list.
+
+
+using what i can find the matching key words
+
+There are several ways to find matching keywords. The best choice depends on how advanced you want your project to be.
+
+Option 1: Dictionary-Based Matching (Recommended for Final-Year Project) ⭐
+This is the simplest and most practical approach.
+
+Step 1: Store suspicious words in the database
+suspicious_words
+
+id    word                 category          points
+---------------------------------------------------
+1     urgent               Urgency             5
+2     verify               Credential         10
+3     password             Credential         15
+4     click here           Action              5
+5     account suspended    Threat             10
+6     immediately          Urgency             5
+7     invoice              Financial           5
+Step 2: Read the email content
+Example:
+
+URGENT!
+
+Verify your account immediately.
+
+Click here to enter your password.
+Step 3: Convert to lowercase
+urgent!
+
+verify your account immediately.
+
+click here to enter your password.
+Step 4: Compare each suspicious word against the email
+In Java:
+
+for (SuspiciousWord word : suspiciousWords) {
+    if (emailContent.toLowerCase().contains(word.getWord().toLowerCase())) {
+        matchedWords.add(word);
+        score += word.getPoints();
+    }
+}
+This method is easy to implement using Spring Boot + MySQL.
+
+Option 2: Regular Expressions (Regex)
+Some phishing indicators have many variations.
+
+Instead of searching only for:
+
+password
+you could search for:
+
+pass(word)?
+or
+
+verify|verification|verified
+Example:
+
+Pattern pattern = Pattern.compile("verify|verification", Pattern.CASE_INSENSITIVE);
+Matcher matcher = pattern.matcher(email);
+
+if (matcher.find()) {
+    // matched
+}
+Regex is useful when you want to detect multiple forms of the same word.
+
+Option 3: NLP (Natural Language Processing)
+This is a more advanced approach.
+
+Instead of matching exact words, NLP tries to understand the text.
+
+Example:
+
+Confirm your account
+
+Validate your account
+
+Verify your account
+Even though the wording differs, NLP can recognize that all three have similar intent.
+
+You could use libraries such as:
+
+Apache OpenNLP
+
+Stanford NLP
+
+spaCy (Python)
+
+Hugging Face Transformers
+
+This is more complex but can detect paraphrased phishing content.
+
+Option 4: Machine Learning (Most Advanced)
+Train a model using thousands of phishing and legitimate emails.
+
+The model predicts:
+
+Email Risk
+
+High Risk
+Medium Risk
+Low Risk
+Typical features include:
+
+Suspicious words
+
+URL characteristics
+
+Number of links
+
+Number of attachments
+
+Sender reputation
+
+Email structure
+
+This requires a labeled dataset and model training.
+
+Which should you choose?
+Since your project already includes:
+
+User Management
+
+Campaign Management
+
+Email Templates
+
+Risk Scoring
+
+Dashboard
+
+Reports
+
+I recommend Option 1 (Dictionary-Based Matching) because it is:
+
+Easy to implement with Spring Boot.
+
+Fast to execute.
+
+Easy to explain during your project presentation.
+
+Flexible, since administrators can update the keyword list without changing the code.
+
+You can make it more impressive by combining it with a few extra checks:
+
+Keyword matching (e.g., "urgent", "verify", "password").
+
+Regex for patterns like multiple exclamation marks (!!!), excessive capitalization (URGENT), or common phishing phrases.
+
+URL analysis, such as checking if the displayed link text and the actual destination differ, or whether a shortened URL is used.
+
+This gives you a hybrid rule-based analyzer that is still manageable to build but offers more value than simple keyword matching alone.
+
+
+Campaign Difficulty Levels
+Classify campaigns.
+
+Easy
+Medium
+Hard
+Example:
+
+Easy:
+Obvious phishing email
+
+Medium:
+Password reset email
+
+Hard:
+Internal HR notice
+Then show:
+
+Employee clicked Medium and Hard phishing emails
+This gives more context than a simple click count. tell me how to implement this 
+
+This is actually one of the best features you can add because it is simple to implement, requires only minor database changes, and adds meaningful analytics. Instead of only saying "Employee clicked a phishing email", you can say "Employee clicked a Hard phishing email", which better reflects the employee's security awareness.
+
+How to implement Campaign Difficulty Levels
+Step 1: Add a Difficulty field
+In your Campaign table, add a new column:
+
+campaign_id	campaign_name	difficulty
+1	Bank Login	Easy
+2	Password Reset	Medium
+3	HR Salary Update	Hard
+You can use an ENUM or a string field with values:
+
+Easy
+
+Medium
+
+Hard
+
+Step 2: Admin selects the difficulty
+When creating a campaign, add a dropdown.
+
+Current form:
+
+Campaign Name
+
+Template
+
+Target Group
+
+Schedule Date
+
+[Create]
+New form:
+
+Campaign Name
+
+Template
+
+Difficulty
+
+▼ Easy
+▼ Medium
+▼ Hard
+
+Target Group
+
+Schedule Date
+
+[Create]
+The admin chooses the difficulty based on how realistic the phishing email is.
+
+Step 3: Define what each level means
+You should establish clear rules.
+
+Easy
+Characteristics:
+
+Unknown sender
+
+Many spelling mistakes
+
+Obvious phishing keywords
+
+Fake URL
+
+Example:
+
+Congratulations!!
+
+You won $1000.
+
+Click here immediately!!
+Most employees should recognize this as phishing.
+
+Medium
+Characteristics:
+
+Professional formatting
+
+Password reset
+
+Office 365 login
+
+Invoice
+
+Courier delivery
+
+Example:
+
+Your password expires today.
+
+Reset your password here.
+These emails resemble common workplace communications.
+
+Hard
+Characteristics:
+
+Internal HR notice
+
+CEO request
+
+Payroll update
+
+Meeting invitation
+
+Internal branding
+
+Correct company logo
+
+Example:
+
+Subject:
+Updated Leave Policy
+
+Please review the new HR policy before Friday.
+These closely resemble legitimate internal emails and are more difficult to identify.
+
+Step 4: Store user interactions
+Suppose you already have a table like this:
+
+employee	campaign	clicked	credentials
+John	Password Reset	Yes	No
+Sarah	HR Notice	No	No
+Mike	Salary Update	Yes	Yes
+Since the campaign already has a difficulty level, you can determine which difficulty was involved by joining the campaign data.
+
+Step 5: Analytics
+Instead of only showing:
+
+Clicked Emails
+
+12
+Show:
+
+Easy Campaigns Clicked
+
+2
+
+Medium Campaigns Clicked
+
+6
+
+Hard Campaigns Clicked
+
+4
+This provides more insight into employee performance.
+
+Step 6: Employee Profile
+Example:
+
+John Smith
+
+Campaigns Participated : 15
+
+Easy Clicks : 0
+
+Medium Clicks : 2
+
+Hard Clicks : 3
+
+Credential Submissions : 1
+
+Risk Score : 82
+Now the administrator can see not only how often John failed, but also the difficulty of the campaigns he struggled with.
+
+Step 7: Dashboard
+Campaign Difficulty Analysis
+
+Easy
+
+Participants : 200
+Clicks : 8%
+
+Medium
+
+Participants : 200
+Clicks : 18%
+
+Hard
+
+Participants : 200
+Clicks : 36%
+This also helps evaluate whether a campaign was appropriately challenging.
+
+Step 8: Risk Scoring
+You can incorporate campaign difficulty into your risk score.
+
+Difficulty	Click Penalty	Credential Submission Penalty
+Easy	5	10
+Medium	10	20
+Hard	20	40
+Example:
+
+John
+
+Clicked Easy email
+
+-5
+
+Clicked Hard email
+
+-20
+
+Submitted credentials in Hard campaign
+
+-40
+
+Total Penalty
+
+65
+This reflects that failing a sophisticated phishing simulation is generally more concerning than failing an obvious one.
+
+Step 9: Department Analytics
+Instead of:
+
+Finance
+
+Clicks : 35
+Display:
+
+Department	Easy	Medium	Hard
+IT	1	2	0
+HR	3	6	5
+Finance	2	5	8
+This helps identify which departments struggle with more sophisticated phishing attempts.
+
+Database changes
+You only need one additional column:
+
+campaign table
+campaign_id
+campaign_name
+template_id
+difficulty   <-- NEW
+schedule_date
+No changes are required to your tracking tables if they already reference the campaign.
+
+Why this is a good enhancement
+Compared to existing phishing awareness platforms, this feature:
+
+Adds context to click statistics by considering campaign complexity.
+
+Makes risk scoring more meaningful.
+
+Enables richer employee and department analytics.
+
+Is straightforward to implement with minimal database changes.
+
+Overall, Campaign Difficulty Levels is an excellent enhancement for a final-year project because it is practical, easy to justify, and integrates naturally with the features you already have. It also creates opportunities for future improvements, such as automatically suggesting an appropriate difficulty level based on email characteristics or gradually increasing difficulty as employees demonstrate better phishing awareness.
+
+
+tell me what to do inbasic 
+
+In the basic version, you don't need AI or any complex analysis. Simply let the admin manually assign the difficulty level when creating a campaign.
+
+Step 1: Add a Difficulty field to the Campaign table
+Campaign
+-------------------------
+campaign_id
+campaign_name
+template_id
+difficulty   (Easy/Medium/Hard)
+schedule_date
+Step 2: Add a dropdown in the Create Campaign page
+Campaign Name : ___________
+
+Email Template : ___________
+
+Difficulty :
+
+▼ Easy
+▼ Medium
+▼ Hard
+
+Target Group : ___________
+
+[Create Campaign]
+The admin decides the difficulty based on how realistic the phishing email is.
+
+Step 3: Define simple guidelines
+Difficulty	Description	Example
+Easy	Obvious phishing email with spelling mistakes or suspicious wording	"You won a prize! Click here!"
+Medium	Common business email like a password reset or invoice	"Reset your password"
+Hard	Looks like an internal company email	"HR Policy Update"
+Step 4: Save the difficulty
+When the admin creates a campaign:
+
+Campaign Name : HR Policy
+
+Difficulty : Hard
+Store:
+
+Campaign	Difficulty
+HR Policy	Hard
+Step 5: Show the difficulty in reports
+Instead of only showing:
+
+Employee	Clicked
+John	Yes
+Show:
+
+Employee	Campaign	Difficulty	Clicked
+John	HR Policy	Hard	Yes
+Sarah	Password Reset	Medium	No
+Step 6: Dashboard
+Show a simple summary:
+
+Easy Campaigns
+5 Sent
+1 Click
+
+Medium Campaigns
+8 Sent
+3 Clicks
+
+Hard Campaigns
+6 Sent
+5 Clicks
+That's all you need for a basic implementation.
+You only need to:
+
+Add one new column (difficulty) in the campaign table.
+
+Add one dropdown in the campaign creation form.
+
+Display the difficulty in reports and dashboards.
+
+This is simple to implement but still provides more meaningful analytics than just reporting the total number of clicks.
+
+
+what tech is used to do this
+
+For the basic “Campaign Difficulty Levels” feature, you don’t need any special new technology. You just use your existing web application stack and add a small database + UI change.
+
+I’ll break it down clearly by layers.
+
+1. Backend Technology (core logic)
+You can implement this using any standard backend. Most common choices:
+
+If you are using Java:
+Spring Boot
+
+Spring MVC (REST APIs)
+
+Spring Data JPA (database access)
+
+If you are using Node.js:
+Express.js
+
+Sequelize / Mongoose (DB access)
+
+If you are using Python:
+Django / Flask
+
+👉 The logic is the same in all stacks.
+
+What backend does here?
+You only need:
+
+1. Campaign Model Update
+Add a field:
+
+difficulty: String  // Easy, Medium, Hard
+2. API Changes
+Create Campaign API
+POST /campaigns
+Request body:
+
+{
+  "name": "HR Policy Email",
+  "templateId": 5,
+  "difficulty": "Hard",
+  "targetGroupId": 2
+}
+Get Campaigns API
+GET /campaigns
+Response:
+
+[
+  {
+    "id": 1,
+    "name": "Password Reset",
+    "difficulty": "Medium"
+  }
+]
+2. Database Technology
+Any relational database works:
+
+MySQL (most common)
+
+PostgreSQL
+
+SQL Server
+
+Table structure
+CREATE TABLE campaign (
+    campaign_id INT PRIMARY KEY,
+    name VARCHAR(255),
+    template_id INT,
+    difficulty VARCHAR(10),
+    created_at TIMESTAMP
+);
+That’s it. No complex schema changes.
+
+3. Frontend Technology
+Any UI tech works:
+
+React.js
+
+Angular
+
+Vue.js
+
+JSP / Thymeleaf (Spring Boot projects)
+
+UI Change
+Add a simple dropdown:
+
+<label>Difficulty</label>
+<select name="difficulty">
+  <option>Easy</option>
+  <option>Medium</option>
+  <option>Hard</option>
+</select>
+4. Analytics / Reporting Layer
+This is where difficulty becomes useful.
+
+You just group data by difficulty.
+
+SQL Query example:
+SELECT difficulty, COUNT(*) as campaigns
+FROM campaign
+GROUP BY difficulty;
+Click analysis:
+SELECT c.difficulty,
+       COUNT(l.click_id)
+FROM campaign c
+JOIN logs l ON c.campaign_id = l.campaign_id
+WHERE l.clicked = true
+GROUP BY c.difficulty;
+5. No new advanced tech needed
+For BASIC version:
+
+❌ No AI
+❌ No machine learning
+❌ No NLP
+❌ No external APIs
+
+Just:
+
+✔ Backend CRUD
+✔ Database column
+✔ Simple UI dropdown
+✔ Reporting queries
+
+6. Optional (if you want to upgrade later)
+If you want to make it advanced later, then you can add:
+
+Feature	Tech
+Auto-detect difficulty	NLP / AI model
+Email risk scoring	Python ML / rules engine
+Smart suggestions	LLM / OpenAI API
+Real-time dashboards	WebSockets
+But these are NOT required for basic implementation.
+
+Final Summary
+To implement “Campaign Difficulty Levels” you only need:
+
+Tech Stack:
+Backend: Spring Boot / Node.js / Django
+
+Database: MySQL
+
+Frontend: React / Angular / JSP
+
+Changes:
+Add difficulty column in Campaign table
+
+Add dropdown in UI
+
+Pass value through API
+
+Show it in reports/dashboard
+
+If you want, I can next show you:
+👉 full Spring Boot code (entity + controller + service) for this feature
+👉 or database design for your entire phishing awareness system
+
+
+no of redirects how to add this feature using what
+
+“Number of redirects” is a good feature for your phishing simulation system, and you can implement it in a very simple rule-based way using your existing web stack.
+
+🔁 What is “Number of Redirects” in your system?
+It means:
+
+How many times a user is redirected before reaching the final page (landing page or credential page)
+
+Example:
+
+Email Link
+  ↓
+Redirect 1 (tracking server)
+  ↓
+Redirect 2 (masking page)
+  ↓
+Final landing page
+So:
+
+0 redirects → direct link
+
+1–2 redirects → normal tracking
+
+3+ redirects → more “realistic phishing simulation”
+
+🧠 What technology is used?
+You do NOT need special tools. Just use:
+
+✔ Backend (IMPORTANT)
+Spring Boot (or Node.js / Django)
+
+REST API
+
+Redirect controller logic
+
+✔ Database
+MySQL / PostgreSQL
+
+✔ Optional frontend
+Dashboard display only
+
+🧱 How to implement it (Basic approach)
+1. Add a column in Campaign table
+ALTER TABLE campaign
+ADD redirect_count INT DEFAULT 1;
+2. Admin sets redirect count when creating campaign
+UI example:
+Campaign Name: ________
+
+Difficulty: Medium
+
+Redirect Count:
+[ 1 ▼ ]
+  1 redirect
+  2 redirects
+  3 redirects
+
+[Create Campaign]
+3. How redirects actually work (core idea)
+You create a tracking URL system
+
+Step A: User clicks email link
+Example:
+
+http://yourapp.com/track/campaign/123/user/45
+Step B: Backend controls redirects
+In Spring Boot:
+
+@GetMapping("/track/{campaignId}/{userId}")
+public void track(@PathVariable Long campaignId,
+                  @PathVariable Long userId,
+                  HttpServletResponse response) throws IOException {
+
+    int redirectCount = campaignService.getRedirectCount(campaignId);
+
+    // Log click
+    trackingService.saveClick(campaignId, userId);
+
+    // Redirect loop simulation
+    response.sendRedirect("/redirect/step1?c=" + campaignId + "&u=" + userId);
+}
+Step C: Multiple redirect steps
+@GetMapping("/redirect/step{n}")
+public void redirect(@RequestParam int c,
+                     @RequestParam int u,
+                     HttpServletResponse response) throws IOException {
+
+    int totalRedirects = campaignService.getRedirectCount(c);
+
+    int currentStep = trackingService.getCurrentStep(u, c);
+
+    if (currentStep < totalRedirects) {
+        trackingService.incrementStep(u, c);
+
+        response.sendRedirect("/redirect/step" + (currentStep + 1)
+                + "?c=" + c + "&u=" + u);
+    } else {
+        response.sendRedirect("/landing-page?c=" + c + "&u=" + u);
+    }
+}
+4. Tracking table
+CREATE TABLE tracking (
+    id INT PRIMARY KEY,
+    campaign_id INT,
+    user_id INT,
+    redirect_step INT DEFAULT 0,
+    clicked BOOLEAN
+);
+📊 How you use it in analytics
+Now you can show:
+
+Campaign stats
+Campaign	Redirects	Click Rate
+Basic Phishing	1	20%
+HR Notice	2	35%
+Fake Portal	3	50%
+Employee behavior
+Employee	Campaign	Redirects Followed
+John	HR Notice	2
+Sarah	Fake Portal	3
+🎯 Why this feature is useful
+It helps you measure:
+
+How deeply users engage with phishing flow
+
+Whether users stop at intermediate pages
+
+Effectiveness of multi-step phishing simulations
+
+Realism level of campaigns
+
+⚠️ IMPORTANT (simple version vs advanced version)
+✔ SIMPLE VERSION (recommended for your project)
+Just:
+
+Store redirect_count
+
+Log click
+
+Show analytics
+
+No real multi-step redirects
+
+👉 This is enough for final-year project
+
+🔥 ADVANCED VERSION
+Real multi-step redirect flow
+
+Session tracking
+
+Step-wise logging
+
+Behavioral scoring
+
+🧩 Best tech choice summary
+Layer	Tech
+Backend	Spring Boot / Node.js
+DB	MySQL
+Logic	REST APIs + redirect controller
+Frontend	React / Angular
+Tracking	Simple DB logging
+🚀 Final advice
+If you are building a final-year project, do this:
+
+✔ Add redirect_count field
+✔ Show it in campaign creation
+✔ Use it in reports
+✔ (Optional) simulate redirect flow
+
+That alone is enough to make your system look more advanced than most phishing awareness tools.
+
+If you want next, I can also help you design:
+👉 full database schema for your entire system
+👉 or architecture diagram for your project report
+👉 or how to combine all features (difficulty + redirects + risk score) into one model
+
+
+yes
+
+Great — I’ll put everything together so your system looks like a complete, professional phishing awareness platform architecture.
+
+🏗️ 1. Overall System Architecture
+            ┌─────────────────────┐
+            │     Admin Portal     │
+            │ (React / Angular)    │
+            └─────────┬───────────┘
+                      │ REST APIs
+                      ▼
+        ┌────────────────────────────┐
+        │      Backend Server        │
+        │     (Spring Boot)          │
+        │                            │
+        │ Campaign Management        │
+        │ Email Tracking Engine      │
+        │ Risk Scoring Engine        │
+        │ Redirect Controller        │
+        │ Keyword Analyzer           │
+        └─────────┬──────────────────┘
+                  │
+      ┌───────────┴────────────┐
+      ▼                        ▼
+┌──────────────┐      ┌────────────────┐
+│   MySQL DB    │      │  Analytics DB   │
+└──────────────┘      └────────────────┘
+🧱 2. Core Database Design (Final Combined Model)
+👤 User Table
+user_id
+name
+email
+department_id
+role
+🏢 Department Table
+department_id
+department_name
+📢 Campaign Table (IMPORTANT)
+This is where your new features go:
+
+campaign_id
+campaign_name
+template_id
+
+difficulty          -- Easy / Medium / Hard
+redirect_count      -- 1 / 2 / 3
+created_by
+created_at
+📧 Email Template Table
+template_id
+subject
+body
+📊 Tracking Table (User Activity)
+tracking_id
+user_id
+campaign_id
+
+clicked              -- boolean
+credential_submitted -- boolean
+open_count
+
+redirect_step        -- current step user reached
+timestamp
+⚠️ Suspicious Keyword Table (your earlier feature)
+keyword_id
+word
+category
+risk_points
+🧠 3. Unified Risk Scoring Model (VERY IMPORTANT FOR REPORT)
+This is what makes your project look strong.
+
+📊 Final Risk Score Formula
+Risk Score =
+Campaign Difficulty Impact
++ Click Behavior Score
++ Credential Risk
++ Redirect Engagement Score
++ Keyword Risk (if email analysis enabled)
+📌 Breakdown
+🎯 1. Campaign Difficulty Impact
+Level	Score Impact
+Easy	-5
+Medium	+10
+Hard	+20
+🖱️ 2. Click Behavior
+Action	Score
+No click	0
+Clicked	+20
+🔐 3. Credential Submission
+Action	Score
+No submission	0
+Submitted	+40
+🔁 4. Redirect Behavior
+Redirect Level	Meaning	Score
+1	basic	+5
+2	medium realism	+10
+3+	highly realistic phishing	+15
+🧾 5. Keyword Risk (optional feature)
+Sum of matched suspicious words.
+
+📈 4. Department Security Ranking (Final Model)
+Department Score =
+100
+- Average Risk Score
++ Training Completion Bonus
+- Credential Submission Penalty
+Example Output
+Department	Score
+IT	95
+Quality	90
+Finance	78
+HR	62
+🔁 5. How Redirect Feature Works (Final Design)
+Simple Flow:
+Email Link Clicked
+        ↓
+Tracking API
+        ↓
+Check redirect_count in Campaign
+        ↓
+Increment step in Tracking Table
+        ↓
+Redirect user again OR go to final landing page
+Example:
+Campaign:
+
+HR Policy Email
+redirect_count = 3
+User journey:
+
+Click → Step 1 → Step 2 → Step 3 → Landing Page
+Stored:
+
+redirect_step = 3
+clicked = true
+📊 6. Dashboard (Final Combined View)
+Admin Dashboard
+Overall Security Score: 82/100
+
+Campaign Performance:
+- Easy: 5% click rate
+- Medium: 18% click rate
+- Hard: 35% click rate
+
+Department Ranking:
+1. IT - 95
+2. Quality - 90
+3. Finance - 78
+4. HR - 62
+
+High Risk Users:
+- John (85 risk)
+- Mike (78 risk)
+🧩 7. Final Feature Map (What YOU now have)
+Core System
+User Management
+
+Campaign Management
+
+Email Templates
+
+Employee Groups
+
+Tracking
+Email Open Tracking
+
+Click Tracking
+
+Credential Tracking
+
+Redirect Tracking
+
+Intelligence Features
+Suspicious Keyword Detection
+
+Campaign Difficulty Levels
+
+Risk Scoring Engine
+
+Department Ranking
+
+Analytics
+Dashboard
+
+Reports
+
+Department Analysis
+
+🚀 8. Why your project is now strong
+With these features, your system becomes:
+
+✔ Not just tracking clicks
+✔ But analyzing behavior + difficulty + engagement depth
+✔ Includes risk intelligence layer
+✔ Includes organizational ranking system
+
+This is exactly what real phishing simulation platforms do (simplified version).
+
+If you want next step (high value)
+I can help you build:
+
+👉 1. Full Spring Boot folder structure
+👉 2. ER diagram for your report
+👉 3. Use case diagram + class diagram
+👉 4. PPT content for viva
+👉 5. Full risk scoring algorithm code
+Just tell me 👍
+
+
+full spring boot folder 
+
+Here’s a clean, real-world Spring Boot folder structure for your Phishing Awareness / Campaign Simulation System including:
+
+Campaign difficulty
+
+Redirect tracking
+
+Suspicious keyword analysis
+
+Risk scoring
+
+Department ranking
+
+User tracking
+
+This is structured like an industry-style project, not a basic CRUD app.
+
+🏗️ FULL SPRING BOOT PROJECT STRUCTURE
+phishing-simulation-system/
+│
+├── src/main/java/com/phishing/app/
+│
+│   ├── PhishingApplication.java
+│
+│   ├── config/
+│   │     ├── SecurityConfig.java
+│   │     ├── WebConfig.java
+│   │
+│   ├── controller/
+│   │     ├── AuthController.java
+│   │     ├── UserController.java
+│   │     ├── CampaignController.java
+│   │     ├── TrackingController.java
+│   │     ├── AnalyticsController.java
+│   │     ├── AdminDashboardController.java
+│   │
+│   ├── service/
+│   │     ├── UserService.java
+│   │     ├── CampaignService.java
+│   │     ├── TrackingService.java
+│   │     ├── EmailAnalysisService.java
+│   │     ├── RiskScoringService.java
+│   │     ├── DepartmentRankingService.java
+│   │
+│   ├── service/impl/
+│   │     ├── UserServiceImpl.java
+│   │     ├── CampaignServiceImpl.java
+│   │     ├── TrackingServiceImpl.java
+│   │     ├── EmailAnalysisServiceImpl.java
+│   │     ├── RiskScoringServiceImpl.java
+│   │     ├── DepartmentRankingServiceImpl.java
+│   │
+│   ├── repository/
+│   │     ├── UserRepository.java
+│   │     ├── CampaignRepository.java
+│   │     ├── TrackingRepository.java
+│   │     ├── DepartmentRepository.java
+│   │     ├── SuspiciousKeywordRepository.java
+│   │
+│   ├── entity/
+│   │     ├── User.java
+│   │     ├── Department.java
+│   │     ├── Campaign.java
+│   │     ├── EmailTemplate.java
+│   │     ├── Tracking.java
+│   │     ├── SuspiciousKeyword.java
+│   │
+│   ├── dto/
+│   │     ├── CampaignRequestDTO.java
+│   │     ├── CampaignResponseDTO.java
+│   │     ├── RiskScoreDTO.java
+│   │     ├── DepartmentScoreDTO.java
+│   │
+│   ├── enums/
+│   │     ├── DifficultyLevel.java   (EASY, MEDIUM, HARD)
+│   │     ├── Role.java              (ADMIN, USER)
+│   │
+│   ├── util/
+│   │     ├── EmailParserUtil.java
+│   │     ├── KeywordMatcherUtil.java
+│   │     ├── ScoreCalculatorUtil.java
+│   │
+│   ├── exception/
+│   │     ├── GlobalExceptionHandler.java
+│   │     ├── ResourceNotFoundException.java
+│
+│
+├── src/main/resources/
+│   ├── application.properties
+│   ├── static/
+│   ├── templates/   (if using Thymeleaf)
+│
+│
+├── database/
+│   ├── schema.sql
+│   ├── data.sql
+│
+│
+├── pom.xml
+🧠 WHAT EACH LAYER DOES (IMPORTANT FOR VIVA)
+1. 🎮 Controller Layer
+Handles HTTP requests.
+
+Example:
+
+@PostMapping("/campaign/create")
+public ResponseEntity<?> createCampaign(@RequestBody CampaignRequestDTO dto) {
+    return ResponseEntity.ok(campaignService.createCampaign(dto));
+}
+2. 🧠 Service Layer (Business Logic)
+Where your core features live:
+
+Risk scoring
+
+Keyword detection
+
+Redirect logic
+
+Difficulty handling
+
+Example:
+
+public int calculateRiskScore(Tracking tracking, Campaign campaign) {
+
+    int score = 0;
+
+    if (campaign.getDifficulty() == DifficultyLevel.HARD)
+        score += 20;
+
+    if (tracking.isClicked())
+        score += 20;
+
+    if (tracking.isCredentialSubmitted())
+        score += 40;
+
+    return score;
+}
+3. 🗄️ Repository Layer
+Database access:
+
+@Repository
+public interface CampaignRepository extends JpaRepository<Campaign, Long> {
+}
+4. 🧾 Entity Layer (Database Tables)
+Example:
+
+@Entity
+public class Campaign {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String name;
+
+    @Enumerated(EnumType.STRING)
+    private DifficultyLevel difficulty;
+
+    private int redirectCount;
+}
+5. 🔍 Email Analysis Module (Your Suspicious Words Feature)
+EmailAnalysisService
+Responsibilities:
+
+Scan email text
+
+Match suspicious words
+
+Return risk score
+
+Highlight keywords
+
+6. 📊 Risk Scoring Engine
+Central logic:
+
+RiskScoringService
+Combines:
+
+Difficulty
+
+Click behavior
+
+Credential submission
+
+Redirect behavior
+
+Keyword detection
+
+7. 🔁 Redirect Tracking Module
+TrackingController + TrackingService
+Handles:
+
+Click event
+
+Redirect step increment
+
+Final landing page
+
+8. 📈 Analytics Module
+AnalyticsController
+Provides:
+
+Department ranking
+
+Campaign performance
+
+User risk score
+
+Difficulty-based stats
+
+9. 🏆 Department Ranking Module
+DepartmentRankingService
+Example logic:
+
+public int calculateDepartmentScore(List<Tracking> data) {
+
+    int score = 100;
+
+    for (Tracking t : data) {
+
+        if (t.isClicked()) score -= 10;
+
+        if (t.isCredentialSubmitted()) score -= 25;
+    }
+
+    return Math.max(score, 0);
+}
+10. ⚙️ Utils Layer (Important)
+Reusable logic:
+
+Keyword Matching
+if (email.toLowerCase().contains(keyword.getWord())) {
+    score += keyword.getPoints();
+}
+Email Parsing
+Remove special characters
+
+Normalize text
+
+Tokenize words
+
+🧩 FINAL FLOW OF SYSTEM
+Admin creates campaign
+        ↓
+Selects difficulty + redirect count
+        ↓
+System sends phishing email
+        ↓
+User clicks email
+        ↓
+Tracking module logs behavior
+        ↓
+Redirect engine processes flow
+        ↓
+Keyword + risk engine evaluates email
+        ↓
+Score is calculated
+        ↓
+Dashboard shows analytics
+🚀 WHY THIS STRUCTURE IS STRONG
+This structure gives you:
+
+✔ Real-world layered architecture
+✔ Separation of concerns
+✔ Scalable design
+✔ Easy viva explanation
+✔ Covers ALL your features
+
+If you want next (highly recommended)
+I can generate:
+
+👉 ER Diagram (very important for report)
+👉 Class Diagram (UML)
+👉 Sequence Diagram (click → redirect flow)
+👉 Full Risk Scoring Java code
+👉 PPT content (ready for viva)
+Just tell me 👍
+
+
+project flow
+
+Here’s a clean, end-to-end PROJECT FLOW for your Phishing Awareness & Simulation System. This is exactly how you can explain it in report + viva.
+
+🔄 OVERALL PROJECT FLOW
+ADMIN SETUP
+   ↓
+SYSTEM CONFIGURATION
+   ↓
+CAMPAIGN CREATION
+   ↓
+EMAIL DELIVERY
+   ↓
+USER INTERACTION
+   ↓
+TRACKING + ANALYSIS
+   ↓
+RISK SCORING
+   ↓
+DASHBOARD + REPORTS
+🧭 1. ADMIN SETUP PHASE
+What admin does:
+Login to system
+
+Create departments
+
+Add users (employees)
+
+Group employees
+
+Configure suspicious keywords
+
+Output:
+Departments ready
+Users assigned
+Keyword database ready
+System configured
+📢 2. CAMPAIGN CREATION PHASE
+Admin creates phishing simulation campaign.
+
+Inputs:
+Campaign name
+
+Email template
+
+Difficulty (Easy / Medium / Hard)
+
+Redirect count (1 / 2 / 3)
+
+Target group
+
+Example:
+Campaign: HR Policy Update
+Difficulty: Hard
+Redirects: 3
+Target: HR Department
+Output:
+Campaign stored in database.
+
+📧 3. EMAIL DELIVERY PHASE
+System sends phishing email to users.
+
+Email contains:
+Suspicious or realistic content
+
+Tracking link
+
+Hidden redirect logic
+
+Example:
+Subject: HR Policy Update
+
+Click here to review updated policy:
+http://app/track/123
+👤 4. USER INTERACTION PHASE
+User receives email and performs actions:
+
+Possible actions:
+Action	Meaning
+Open email	Basic interaction
+Click link	Risk behavior
+Enter credentials	High risk
+Ignore email	Safe behavior
+Redirect Flow:
+Click → Redirect 1 → Redirect 2 → Landing Page
+🧠 5. TRACKING PHASE
+System records every action:
+
+Stored data:
+Email opened
+
+Link clicked
+
+Redirect steps
+
+Credential submission
+
+Timestamp
+
+Example:
+User: John
+Campaign: HR Policy
+Clicked: YES
+Credentials: NO
+Redirect Step: 2
+⚠️ 6. EMAIL ANALYSIS PHASE (Suspicious Words)
+System checks email content:
+
+Detects:
+Urgent words
+
+Password requests
+
+Suspicious links
+
+Threat phrases
+
+Example:
+Detected:
+✔ urgent
+✔ verify
+✔ password
+
+Risk Contribution: +45
+📊 7. RISK SCORING ENGINE
+System calculates risk per user.
+
+Formula (simplified):
+Risk Score =
+Campaign Difficulty +
+Click Behavior +
+Credential Submission +
+Redirect Level +
+Keyword Risk
+Example:
+John
+
+Clicked Medium email → +20
+Redirect Level 2 → +10
+No credential submission → +0
+Keywords matched → +15
+
+Final Score = 45/100
+🏆 8. DEPARTMENT ANALYSIS
+System groups users by department.
+
+Output:
+Department	Avg Risk Score
+IT	25
+Finance	60
+HR	75
+🥇 9. DEPARTMENT SECURITY RANKING
+System ranks departments.
+
+1. IT      - 95/100
+2. Finance - 78/100
+3. HR      - 62/100
+📈 10. DASHBOARD & REPORTS
+Admin views analytics:
+
+Dashboard shows:
+Campaign performance
+
+Click rate
+
+Credential submission rate
+
+Department ranking
+
+High-risk users
+
+Example:
+Campaign Performance:
+Easy: 10% click rate
+Medium: 25%
+Hard: 40%
+
+Top Risk Users:
+John - 80
+Mike - 75
+🔁 COMPLETE END-TO-END FLOW
+ADMIN LOGIN
+   ↓
+CREATE USERS + DEPARTMENTS
+   ↓
+CREATE CAMPAIGN
+   ↓
+SET DIFFICULTY + REDIRECTS
+   ↓
+SEND PHISHING EMAIL
+   ↓
+USER OPENS EMAIL
+   ↓
+USER CLICKS LINK
+   ↓
+TRACKING SYSTEM LOGS ACTION
+   ↓
+REDIRECT ENGINE EXECUTES FLOW
+   ↓
+EMAIL ANALYZER CHECKS KEYWORDS
+   ↓
+RISK SCORE GENERATED
+   ↓
+DATA STORED IN DATABASE
+   ↓
+DASHBOARD UPDATES
+   ↓
+DEPARTMENT RANKING GENERATED
+🎯 HOW TO EXPLAIN IN VIVA (IMPORTANT)
+You can say:
+
+“Our system simulates phishing attacks and tracks user behavior such as email opening, link clicking, credential submission, and redirect navigation. Based on these actions, we calculate a risk score and rank users and departments. We also enhance realism using campaign difficulty levels and multi-step redirect tracking, along with keyword-based email risk analysis.”
+
+🚀 WHY THIS FLOW IS STRONG
+✔ Covers full system lifecycle
+✔ Shows real-time behavior tracking
+✔ Includes analytics + intelligence
+✔ Easy to explain in presentation
+✔ Looks like real industry product
+
+If you want next, I can create:
+
+👉 UML diagrams (Class + Sequence + Use case)
+👉 PPT slides for viva
+👉 ER diagram
+👉 Full project documentation (report format)
+
+Just tell me 👍
+
+     
+
+
+Voice
