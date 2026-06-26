@@ -1,0 +1,429 @@
+Below is a complete set of diagrams and documentation structure you can use for your project.
+
+---
+
+# 1. Use Case Diagram
+
+```text
+                           +----------------+
+                           |     Admin      |
+                           +----------------+
+                                  |
+        ---------------------------------------------------------
+        |            |            |            |                |
+        |            |            |            |                |
+   Manage Users  Manage Groups  Manage Templates  Create Campaign  View Reports
+                                         |              |
+                                         |              |
+                              Set Difficulty       Set Redirect Count
+                                         |
+                                         |
+                                  Send Campaign
+                                         |
+                                         |
+                              View Dashboard
+                                         |
+                                         |
+                          Department Ranking
+                                         |
+                                         |
+                          Manage Suspicious Keywords
+
+
+
+                           +----------------+
+                           |    Employee    |
+                           +----------------+
+                                   |
+              ----------------------------------------
+              |                  |                   |
+          Receive Email      Open Email        Click Link
+                                                   |
+                                           Submit Credentials
+```
+
+---
+
+# 2. ER Diagram
+
+```
++----------------+
+| Department     |
++----------------+
+| department_id  |
+| department_name|
++----------------+
+        |
+        |1
+        |
+        |M
++----------------+
+| User           |
++----------------+
+| user_id        |
+| name           |
+| email          |
+| department_id  |
+| role           |
++----------------+
+        |
+        |1
+        |
+        |M
++----------------+
+| Tracking       |
++----------------+
+| tracking_id    |
+| user_id        |
+| campaign_id    |
+| opened         |
+| clicked        |
+| credential     |
+| redirect_step  |
+| timestamp      |
++----------------+
+        ^
+        |
+        |M
+        |
+        |1
++----------------+
+| Campaign       |
++----------------+
+| campaign_id    |
+| campaign_name  |
+| difficulty     |
+| redirect_count |
+| template_id    |
++----------------+
+        |
+        |1
+        |
+        |1
++----------------+
+| EmailTemplate  |
++----------------+
+| template_id    |
+| subject        |
+| body           |
++----------------+
+
++-------------------------+
+| SuspiciousKeyword       |
++-------------------------+
+| keyword_id              |
+| word                    |
+| category                |
+| risk_points             |
++-------------------------+
+```
+
+---
+
+# 3. Class Diagram
+
+```
++------------------+
+| User             |
++------------------+
+| id               |
+| name             |
+| email            |
+| department       |
++------------------+
+
+        |
+
++------------------+
+| Campaign         |
++------------------+
+| id               |
+| name             |
+| difficulty       |
+| redirectCount    |
++------------------+
+
+        |
+
++------------------+
+| Tracking         |
++------------------+
+| opened           |
+| clicked          |
+| credentials      |
+| redirectStep     |
++------------------+
+
+        |
+
++------------------+
+| RiskScoreService |
++------------------+
+| calculateRisk()  |
++------------------+
+
+        |
+
++----------------------+
+| EmailAnalysisService |
++----------------------+
+| analyzeEmail()       |
+| matchKeywords()      |
++----------------------+
+```
+
+---
+
+# 4. Sequence Diagram
+
+```
+Admin
+   |
+   | Create Campaign
+   |
+Backend
+   |
+   | Save Campaign
+   |
+Database
+   |
+   | Campaign Saved
+   |
+Backend
+   |
+   | Send Email
+   |
+Employee
+   |
+   | Click Link
+   |
+Tracking Controller
+   |
+   | Store Click
+   |
+Redirect Controller
+   |
+   | Redirect User
+   |
+Landing Page
+   |
+   | Submit Credentials
+   |
+Tracking Controller
+   |
+   | Update Tracking
+   |
+Risk Engine
+   |
+   | Calculate Score
+   |
+Dashboard
+```
+
+---
+
+# 5. Activity Diagram
+
+```
+Start
+
+↓
+
+Admin Login
+
+↓
+
+Create Campaign
+
+↓
+
+Choose Template
+
+↓
+
+Select Difficulty
+
+↓
+
+Set Redirect Count
+
+↓
+
+Send Email
+
+↓
+
+Employee Opens Email?
+
+↓
+
+YES
+
+↓
+
+Clicks Link?
+
+↓
+
+YES
+
+↓
+
+Redirect Tracking
+
+↓
+
+Landing Page
+
+↓
+
+Credential Submitted?
+
+↓
+
+YES
+
+↓
+
+Update Risk Score
+
+↓
+
+Generate Report
+
+↓
+
+End
+```
+
+---
+
+# 6. Modules
+
+## Module 1
+
+Authentication
+
+* Admin Login
+* User Login
+
+---
+
+## Module 2
+
+User Management
+
+* Add Employee
+* Update Employee
+* Delete Employee
+* Employee Groups
+
+---
+
+## Module 3
+
+Campaign Management
+
+* Create Campaign
+* Schedule Campaign
+* Select Email Template
+* Assign Difficulty
+* Redirect Count
+
+---
+
+## Module 4
+
+Tracking Module
+
+* Email Open Tracking
+* Link Click Tracking
+* Credential Submission Tracking
+* Redirect Tracking
+
+---
+
+## Module 5
+
+Email Analysis Module
+
+* Detect Suspicious Keywords
+* Highlight Keywords
+* Email Risk Score
+
+---
+
+## Module 6
+
+Risk Scoring Module
+
+Calculate employee risk based on:
+
+* Clicks
+* Credentials
+* Difficulty
+* Redirects
+
+---
+
+## Module 7
+
+Analytics Module
+
+* Dashboard
+* Department Analysis
+* Department Ranking
+* Campaign Performance
+* Reports
+
+---
+
+# 7. Recommended Tech Stack
+
+| Layer           | Technology                                     |
+| --------------- | ---------------------------------------------- |
+| Frontend        | React.js (or Angular)                          |
+| Backend         | Spring Boot                                    |
+| Database        | MySQL                                          |
+| ORM             | Spring Data JPA (Hibernate)                    |
+| Authentication  | Spring Security + JWT (or session-based login) |
+| Email           | JavaMailSender                                 |
+| Build Tool      | Maven                                          |
+| IDE             | IntelliJ IDEA / Eclipse                        |
+| Version Control | Git                                            |
+
+---
+
+# 8. Project Workflow
+
+```
+Admin Login
+      ↓
+Manage Users & Departments
+      ↓
+Create Email Template
+      ↓
+Create Campaign
+      ↓
+Select Difficulty
+      ↓
+Set Redirect Count
+      ↓
+Send Phishing Email
+      ↓
+Employee Opens Email
+      ↓
+Employee Clicks Link
+      ↓
+Redirect Tracking
+      ↓
+Credential Submission
+      ↓
+Risk Score Calculation
+      ↓
+Department Ranking
+      ↓
+Dashboard & Reports
+```
+
+This structure is appropriate for a final-year project because it separates concerns into clear modules, uses a standard layered Spring Boot architecture, and naturally incorporates the additional features you've discussed, such as campaign difficulty, redirect tracking, suspicious keyword analysis, risk scoring, and department ranking.
